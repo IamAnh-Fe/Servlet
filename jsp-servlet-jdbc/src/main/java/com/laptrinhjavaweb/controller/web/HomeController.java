@@ -1,4 +1,4 @@
-package com.laptrinhwebjavaweb.controller.web;
+package com.laptrinhjavaweb.controller.web;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,7 +14,7 @@ public class HomeController extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-			RequestDispatcher rd = request.getRequestDispatcher("/views/login.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("/views/web/home.jsp");
 			rd.forward(request, response);
 	}
 	
