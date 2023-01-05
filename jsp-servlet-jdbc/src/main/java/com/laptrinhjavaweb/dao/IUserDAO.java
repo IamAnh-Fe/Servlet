@@ -1,5 +1,7 @@
 package com.laptrinhjavaweb.dao;
 
-public class IUserDAO {
+import com.laptrinhjavaweb.model.UserModel;
 
+public interface IUserDAO extends GenericDAO<UserModel> {
+	UserModel findByUserNameAndPasswordAndStatus(String userName, String password, Integer status);
 }
